@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1' PARAM_COUNT=0
+.TITLE ' *****CMOS INVERTER******'
+ delaylh          delayhl          averagepower     rise_time       
+ fall_time        supplycurrent    staticpower      temper          
+ alter#          
+  3.8384e-12       9.3418e-12       6.2551e-08       3.7836e-11     
+  2.7673e-11      -6.3403e-08       6.3403e-08        25.00000      
+1               
