@@ -1,0 +1,247 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: inverter45nm.sp                                                   
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i inverter45nm.sp -o D:\INVERTER_PROJECT\INVERTER45NM\inverter45nm.lis -hpp
+  Start time: Sat Aug  2 12:15:00 2025
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   travi                HOSTNAME: HIMANSHU 
+  lic: HOSTID: "8cf8c5b11dcc"       PID:      40540 
+  lic: Using FLEXlm license file: 
+  lic: 27000@HIMANSHU 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2020.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@HIMANSHU 
+  lic:   
+ 
+ ****** Advanced Analog Library - P-2019.06-SP1-1 (Sep 27 2019) ****** 
+ scientific notation:
+ a=10**-18  f=10**-15  p=10**-12  n=10**-9  u=10**-6
+ m=10**-3   k=10**3    x=10**6    g=10**9 
+
+
+ circuit parameter definitions
+  parameter          =  value 
+
+     0:delaylh                                                 =   0.           
+     0:delayhl                                                 =   0.           
+     0:averagepower                                            =   0.           
+     0:rise_time                                               =   0.           
+     0:fall_time                                               =   0.           
+     0:supplycurrent                                           =   0.           
+     0:staticpower                                             =   0.           
+
+
+
+
+ constants  - tnom         kt           vt           gapsi        ni
+            298.15000    4.1163e-21    25.69184m     1.11562    1.2565e+16 
+  **info** (inverter45nm.sp:9) DC voltage reset to initial transient source value in source 0:v2. new dc=0.0000D+00
+  **warning** (nmos:mn1 (inverter45nm.sp:13)) Warning:  Acde = 0.27944 may be too small in BSIM4 model with w=4.5e-08 l=4.5e-08.
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ *****cmos inverter******
+
+ ****** circuit element summary tnom=  25.000 temp=  25.000 ******
+
+
+ **** independent sources
+
+     name         node1        node2      dc volt    ac mag    ac phase    type
+  v1  vdd               0                    1.0000     0.         0.      dc   
+  v2  vin               0                    0.         0.         0.      pulse
+             initial value     0.     
+             pulsed value.     1.0000 
+             delay time...     0.     
+             risetime.....   100.0000p
+             falltime.....   100.0000p
+             width........     3.9000n
+             period.......     8.0000n
+
+
+
+ **** mosfets
+
+
+ **** BSIM4 Model (Level 54)
+  
+  
+                                        
+ element name        0:mp1      0:mn1   
+ drain               0:vout     0:vout  
+ gate                0:vin      0:vin   
+ source              0:vdd      0:0     
+ bulk                0:vdd      0:0     
+ model               0:pmos     0:nmos  
+ w eff              80.0000n   35.0000n 
+ l eff              17.5000n   17.5000n 
+ rd eff              0.         0.      
+ rs eff              0.         0.      
+ cdsat              10.0000f   10.0000f 
+ cssat               7.1172a    3.5586a 
+ capbd              44.9100a   22.4550a 
+ capbs              71.8560a   35.9280a 
+ temp               25.0000    25.0000  
+ aic                                    
+ nf                  1.0000     1.0000  
+ min                 0.         0.      
+ rbdb               15.0000    15.0000  
+ rbsb               15.0000    15.0000  
+ rbpb                5.0000     5.0000  
+ rbps               15.0000    15.0000  
+ rbpd               15.0000    15.0000  
+ trnqsmod            0.         0.      
+ acnqsmod            0.         0.      
+ rbodymod            1.0000     1.0000  
+ rgatemod            1.0000     1.0000  
+ geomod              1.0000     1.0000  
+ rgeomod             0.         0.      
+ delvto              0.         0.      
+ mulu0               1.0000     1.0000  
+ delk1               0.         0.      
+ delnfct             0.         0.      
+ deltox              0.         0.      
+ sa                  0.         0.      
+ sb                  0.         0.      
+ sd                  0.         0.      
+ saeff               0.         0.      
+ sbeff               0.         0.      
+ m                   1.0000     1.0000  
+ w drawn            90.0000n   45.0000n 
+ l drawn            45.0000n   45.0000n 
+  
+  
+ ******  
+ *****cmos inverter******
+
+ ****** element node table
+                                                                                      
+ 0                v1               v2               mn1:s            mn1:b            
+ vdd              v1               mp1:s            mp1:b                             
+ vin              v2               mp1:g            mn1:g                             
+ vout             mp1:d            mn1:d                                              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ *****cmos inverter******
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vdd     =   1.0000  0:vin     =   0.      0:vout    = 999.9655m
+
+ 
+runlvl= 3 sets ".opt sim_accuracy= 1"  
+ 
+  ******  Summary of Possible Problems in Netlist  *************** 
+  Negative resistor              0   
+  Negative capacitor             0   
+  Negative inductor              0   
+  Unconnected node               0   
+  Dangling terminal              0   
+  Non-rail bulk terminal         0   
+  Floating MOS gate              0   
+  Floating MOS bulk              0   
+  Floating BJT substrate         0   
+  Floating controlled input      0   
+  Floating current source nodes  0   
+  Source loop                    0   
+ 
+No Shorted elements  
+SSolve ...  
+  
+CT 1 
+Running 1 thread. 
+  
+   
+Running HSPICE Precision Parallel (HPP) 
+Auto-select transient simulation algortithm 
+.   
+0.1% time = 792.618303 ps ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-nan(ind) ) 
+100.0% time = 48.001000 ns ( etc = 0.0 sec, ett = 0.0 sec ) 
+( wall = 0.0 sec cpu = 0.0 sec s=-nan(ind) ) 
+ ****** 
+ ****** 
+ ******  transient analysis       temp=  25 
+ ****** 
+ 
+  ******  Measured values for the netlist  *********************** 
+ delaylh=  2.8600e-12 
+ delayhl=  6.5694e-12 
+ averagepower=  4.6228e-08 
+ rise_time=  3.9158e-11 
+ fall_time=  3.5533e-11 
+ supplycurrent=  -4.8572e-08 
+ staticpower=  4.8572e-08 
+ 
+ 
+ *************************  
+ 
+Resource Usage for Transient Analysis 
+CPU Time     0.03 sec   
+Peak Memory  0.00 Mb    
+  
+Wall Time Statistics:  
+  Transient Wall time                   = 1.0000 
+  Transient Wall time per timestep      = 0.0034 
+  Transient Wall time per timestep-node = 0.0003 
+  Total CPU time                       = 0.0270 
+  Total CPU time per step              = 9.1837e-05 
+ 
+ 
+ 
+
+          ***** job concluded
+ ******  
+ *****cmos inverter******
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      12 # elements   =       4
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           8
+  transient          1.00  25001         947         294  rev= 11 
+  readin             0.06
+  errchk             0.00
+  setup              0.00
+  output             0.00
+           peak memory used         77.58 megabytes 
+           total cpu time            0.10 seconds
+           total elapsed time        0.26 seconds
+           job started at     12:15:00 08/02/2025
+           job ended   at     12:15:01 08/02/2025
+           job total runtime         0.26 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.15(s)
