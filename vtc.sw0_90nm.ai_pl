@@ -1,0 +1,28 @@
+program       aim
+command       calculator
+data_file     vtc.sw0.p2
+created       31-07-2025 (23:48:49)
+machine_id    1001
+byte_order    little_endian
+fp_format     ieee
+xname         VOLTS
+xunits        V
+xrange        I 0 1
+ynames
+   v(vin)
+   v(vout)
+   i(v1)
+   v(vdd)
+   i(v2)
+   v(0)
+yunits
+   V
+   V
+   A
+   V
+   A
+   V
+ytype         real
+ncolumns      7
+npoints       101
+format        binary
