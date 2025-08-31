@@ -14,8 +14,11 @@ The project was carried out using HSPICE simulations. Inverters were designed us
 Through this systematic scaling study, the project highlights not only the advantages of moving to advanced technology nodes but also the associated limitations.The analysis provides complete picture of the trade-offs that designers face when moving from older, stable nodes like 180 nm and 130 nm to aggressively scaled nodes such as 32 nm and 10 nm.
 
 <br>
+
+
 MOTIVATION
 <br>
+
 The scaling of CMOS technology has been the driving force behind Moore’s Law, enabling exponential growth in the speed and complexity of integrated circuits. Every new technology node promises faster operation, lower area, and reduced energy per operation. However, as the feature sizes shrink below 100 nm, new challenges emerge: leakage currents increase rapidly, short-channel effects become dominant, and noise margins degrade.
 <br>
 The CMOS inverter, due to its simplicity, serves as the perfect test vehicle to study these scaling effects. By analyzing the inverter at multiple technology nodes, one can clearly see the fundamental trends that affect every larger digital system. For instance:
@@ -31,32 +34,39 @@ METHODOLOGY
 
 <br>
 1.Implemented a standard CMOS inverter schematic and netlist in HSPICE.
+<br>
 2.Simulations performed at the following technology nodes:
     180 nm, 130 nm, 90 nm, 65 nm, 45 nm, 32 nm, 10 nm
+    <br>
 3.Voltage Transfer Characteristics (VTC) plotted to analyze switching threshold and slope.
+<br>
 4.Transient analysis carried out to measure:
-a>low-to-high propogation delay
-b>high-to-low propogation delay
-c>rise time(10% to 90%)
-d>fall time (90% to 10%)
+a>low-to-high propogation delay <br>
+b>high-to-low propogation delay <br>
+c>rise time(10% to 90%)<br>
+d>fall time (90% to 10%)<br>
 5.Average power dissipiation is calculated for each node
 <br>
 
 RESULT SUMMARY
 <br>
 
-1.PROPOGATION DELAYS
+1.PROPOGATION DELAYS <br>
+
 a>Low to High Delay decreases significantly with scaling, from ~23 ps at 180 nm to ~1.7 ps at 10 nm.
+<br>
 b>High to Low Delay generally decreases with scaling but shows a higher value at 10 nm due to short-channel effects and leakage variations.
 
 <br>
-2.RISE AND FALL TIMES
-a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with minor variation.
+2.RISE AND FALL TIMES <br>
+a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with minor variation. <br>
 b>Fall time decreases with scaling but increases again at smaller nodes (≤45 nm), indicating waveform distortion due to reduced noise margins.
 
 <br>
 3.POWER DISSIPATION
+<br>
 a>Average power remains in the 4–7 × 10⁻⁸ W range for nodes down to 32 nm.
+<br>
 b>At 10 nm, power consumption jumps to ~2.3 × 10⁻⁶ W, showing the penalty of aggressive scaling on leakage power.
 
 <br>
@@ -67,16 +77,23 @@ b>At advanced nodes (≤45 nm), the slope reduces slightly, indicating reduced n
 
 
 KEY OBSERVATION
+<br>
 1.Scaling improves switching speed and reduces delay.
+<br>
 2.Leakage power becomes a dominant issue at advanced nodes.
+<br>
 3.Noise margins decrease with scaling, reducing inverter robustness.
+<br>
 4.There exists a trade-off between speed, power, and stability.
 <br>
 
 
 APPLICATIONS
+<br>
 1.Provides a baseline understanding of CMOS scaling effects.
+<br>
 2.Useful for teaching and research in VLSI design.
+<br>
 3.Delay and power data obtained from scaling analysis help in optimizing datapath circuits (ALUs, multipliers, registers) in CPUs and ASICs.
 
 
