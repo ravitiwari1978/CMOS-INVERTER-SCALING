@@ -1,10 +1,13 @@
 # CMOS-INVERTER-SCALING
 Design and simulate the netlist of the CMOS inverter at different technology nodes .
 <br>
+
 Author-RAVI SHANKAR TIWARI
 <br>
+
 PROJECT OVERVIEW
 <br>
+
 The CMOS inverter is the most fundamental building block of digital integrated circuits. It is used in almost every logic gate, flip-flop, memory cell, and large-scale digital system. The performance of the inverter directly reflects the performance of the overall circuit, making it an ideal candidate for studying the effects of CMOS technology scaling.
 <br>
 This project focuses on a detailed analysis of a CMOS inverter when the technology node is scaled from 180 nm down to 10 nm. At each node, both static and dynamic characteristics are studied, including voltage transfer characteristics (VTC), propagation delay, rise and fall times, and average power dissipation. The results demonstrate how scaling leads to faster switching and lower dynamic power, but also introduces significant challenges such as increased leakage currents and reduced noise margins.
@@ -14,7 +17,6 @@ The project was carried out using HSPICE simulations. Inverters were designed us
 Through this systematic scaling study, the project highlights not only the advantages of moving to advanced technology nodes but also the associated limitations.The analysis provides complete picture of the trade-offs that designers face when moving from older, stable nodes like 180 nm and 130 nm to aggressively scaled nodes such as 32 nm and 10 nm.
 
 <br>
-
 
 MOTIVATION
 <br>
@@ -41,25 +43,33 @@ METHODOLOGY
 3.Voltage Transfer Characteristics (VTC) plotted to analyze switching threshold and slope.
 <br>
 4.Transient analysis carried out to measure:
-a>low-to-high propogation delay <br>
-b>high-to-low propogation delay <br>
-c>rise time(10% to 90%)<br>
-d>fall time (90% to 10%)<br>
+a>low-to-high propogation delay 
+<br>
+b>high-to-low propogation delay 
+<br>
+c>rise time(10% to 90%)
+<br>
+d>fall time (90% to 10%)
+<br>
 5.Average power dissipiation is calculated for each node
 <br>
+
 
 RESULT SUMMARY
 <br>
 
-1.PROPOGATION DELAYS <br>
+1.PROPOGATION DELAYS
+<br>
 
 a>Low to High Delay decreases significantly with scaling, from ~23 ps at 180 nm to ~1.7 ps at 10 nm.
 <br>
 b>High to Low Delay generally decreases with scaling but shows a higher value at 10 nm due to short-channel effects and leakage variations.
 
 <br>
-2.RISE AND FALL TIMES <br>
-a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with minor variation. <br>
+2.RISE AND FALL TIMES 
+<br>
+a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with minor variation.
+<br>
 b>Fall time decreases with scaling but increases again at smaller nodes (≤45 nm), indicating waveform distortion due to reduced noise margins.
 
 <br>
@@ -71,10 +81,12 @@ b>At 10 nm, power consumption jumps to ~2.3 × 10⁻⁶ W, showing the penalty o
 
 <br>
 4.VOLTAGE TRANSFER CHARACTERISTICS
+<br>
 a>Larger technology nodes (e.g., 180 nm, 130 nm) show steeper slopes near the switching threshold, close to 90°.
+<br>
 b>At advanced nodes (≤45 nm), the slope reduces slightly, indicating reduced noise margins and higher susceptibility to noise.
 <br>
-
+<br>
 
 KEY OBSERVATION
 <br>
