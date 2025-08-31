@@ -70,9 +70,9 @@ b>High to Low Delay generally decreases with scaling but shows a higher value at
 a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with minor variation.
 <br>
 b>Fall time decreases with scaling but increases again at smaller nodes (≤45 nm), indicating waveform distortion due to reduced noise margins.
-
 <br>
 
+<br>
 3.POWER DISSIPATION
 <br>
 a>Average power remains in the 4–7 × 10⁻⁸ W range for nodes down to 32 nm.
