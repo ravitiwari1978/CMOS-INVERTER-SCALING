@@ -4,6 +4,7 @@ Design and simulate the netlist of the CMOS inverter at different technology nod
 Author-RAVI SHANKAR TIWARI
 <br>
 PROJECT OVERVIEW
+<br>
 The CMOS inverter is the most fundamental building block of digital integrated circuits. It is used in almost every logic gate, flip-flop, memory cell, and large-scale digital system. The performance of the inverter directly reflects the performance of the overall circuit, making it an ideal candidate for studying the effects of CMOS technology scaling.
 <br>
 This project focuses on a detailed analysis of a CMOS inverter when the technology node is scaled from 180 nm down to 10 nm. At each node, both static and dynamic characteristics are studied, including voltage transfer characteristics (VTC), propagation delay, rise and fall times, and average power dissipation. The results demonstrate how scaling leads to faster switching and lower dynamic power, but also introduces significant challenges such as increased leakage currents and reduced noise margins.
@@ -40,8 +41,10 @@ c>rise time(10% to 90%)
 d>fall time (90% to 10%)
 5.Average power dissipiation is calculated for each node
 <br>
+
 RESULT SUMMARY
 <br>
+
 1.PROPOGATION DELAYS
 a>Low to High Delay decreases significantly with scaling, from ~23 ps at 180 nm to ~1.7 ps at 10 nm.
 b>High to Low Delay generally decreases with scaling but shows a higher value at 10 nm due to short-channel effects and leakage variations.
@@ -55,17 +58,22 @@ b>Fall time decreases with scaling but increases again at smaller nodes (≤45 n
 3.POWER DISSIPATION
 a>Average power remains in the 4–7 × 10⁻⁸ W range for nodes down to 32 nm.
 b>At 10 nm, power consumption jumps to ~2.3 × 10⁻⁶ W, showing the penalty of aggressive scaling on leakage power.
+
 <br>
 4.VOLTAGE TRANSFER CHARACTERISTICS
 a>Larger technology nodes (e.g., 180 nm, 130 nm) show steeper slopes near the switching threshold, close to 90°.
 b>At advanced nodes (≤45 nm), the slope reduces slightly, indicating reduced noise margins and higher susceptibility to noise.
 <br>
+
+
 KEY OBSERVATION
 1.Scaling improves switching speed and reduces delay.
 2.Leakage power becomes a dominant issue at advanced nodes.
 3.Noise margins decrease with scaling, reducing inverter robustness.
 4.There exists a trade-off between speed, power, and stability.
 <br>
+
+
 APPLICATIONS
 1.Provides a baseline understanding of CMOS scaling effects.
 2.Useful for teaching and research in VLSI design.
