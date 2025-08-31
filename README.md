@@ -53,14 +53,13 @@ d>fall time (90% to 10%)
 <br>
 5.Average power dissipiation is calculated for each node
 <br>
-
+<br>
 
 RESULT SUMMARY
 <br>
 
 1.PROPOGATION DELAYS
 <br>
-
 a>Low to High Delay decreases significantly with scaling, from ~23 ps at 180 nm to ~1.7 ps at 10 nm.
 <br>
 b>High to Low Delay generally decreases with scaling but shows a higher value at 10 nm due to short-channel effects and leakage variations.
@@ -73,6 +72,7 @@ a>Rise time stays within the range of 3–4.5 × 10⁻¹¹ s across nodes, with 
 b>Fall time decreases with scaling but increases again at smaller nodes (≤45 nm), indicating waveform distortion due to reduced noise margins.
 
 <br>
+
 3.POWER DISSIPATION
 <br>
 a>Average power remains in the 4–7 × 10⁻⁸ W range for nodes down to 32 nm.
@@ -80,6 +80,7 @@ a>Average power remains in the 4–7 × 10⁻⁸ W range for nodes down to 32 nm
 b>At 10 nm, power consumption jumps to ~2.3 × 10⁻⁶ W, showing the penalty of aggressive scaling on leakage power.
 
 <br>
+
 4.VOLTAGE TRANSFER CHARACTERISTICS
 <br>
 a>Larger technology nodes (e.g., 180 nm, 130 nm) show steeper slopes near the switching threshold, close to 90°.
