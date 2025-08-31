@@ -25,7 +25,9 @@ The CMOS inverter, due to its simplicity, serves as the perfect test vehicle to 
 This project was motivated by the desire to build a clear and quantitative understanding of how scaling impacts circuit behavior. Before extending such studies to more complex circuits like SRAM cells or processors, it is essential to study the inverter thoroughly, as it provides a baseline reference for all other digital designs. The results from this project not only help explain past and current scaling trends but also provide valuable insights into the limitations that appear in nanometer-scale devices, which are critical for future VLSI research and design.
 
 <br>
+
 METHODOLOGY
+
 <br>
 1.Implemented a standard CMOS inverter schematic and netlist in HSPICE.
 2.Simulations performed at the following technology nodes:
